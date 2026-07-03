@@ -2,7 +2,7 @@
   "produto": {
     "nome": "Comunidade Elis Nhaia",
     "subtitulo": "Gestão Estratégica para Negócios Lucrativos",
-    "descricaoCurta": "O ambiente para empresárias e empresários que querem sair da operação e assumir a gestão estratégica do próprio negócio."
+    "descricaoCurta": "Ambiente para empresárias e empresários que querem tomar decisões estratégicas, organizar processos e reduzir a dependência da própria presença no negócio."
   },
   "oferta": {
     "preco": "TODO_PRECO",
@@ -20,49 +20,73 @@
     }
   },
   "entregaveis": [
-    { "titulo": "2 lives mensais", "descricao": "Encontros ao vivo com conteúdo estratégico e tira-dúvidas direto com a Elis." },
-    { "titulo": "Ferramentas práticas", "descricao": "Planilhas e checklists prontos para aplicar na gestão do seu negócio." },
-    { "titulo": "1 hotseat mensal", "descricao": "Um problema real resolvido ao vivo, na frente de todo o grupo." },
-    { "titulo": "Comunidade ativa", "descricao": "Rede de trocas com outras empresárias e empresários no mesmo momento de jornada." }
+    {
+      "titulo": "2 lives mensais",
+      "descricao": "Encontros ao vivo com conteúdo estratégico e espaço para tirar dúvidas diretamente com a Elis."
+    },
+    {
+      "titulo": "Ferramentas práticas",
+      "descricao": "Planilhas, checklists e modelos para aplicar na gestão sem começar do zero."
+    },
+    {
+      "titulo": "1 hotseat mensal",
+      "descricao": "Um problema real analisado ao vivo, com critérios de decisão e próximos passos concretos."
+    },
+    {
+      "titulo": "Comunidade ativa",
+      "descricao": "Troca entre empresários que estão construindo empresas mais organizadas, lucrativas e menos dependentes da operação."
+    }
   ],
   "canais": [
     {
-      "emoji": "📢",
+      "emoji": "!",
       "nome": "Avisos",
-      "descricao": "Canal oficial de comunicados: agenda dos encontros, novidades, abertura de inscrições e novos materiais. Somente a equipe publica aqui."
+      "descricao": "Canal oficial de comunicados: agenda dos encontros, novidades, abertura de inscrições e novos materiais."
     },
     {
-      "emoji": "💬",
+      "emoji": "+",
       "nome": "Comunidade",
-      "descricao": "Espaço de convivência para compartilhar desafios, fazer networking e trocar experiências com quem está construindo empresas mais organizadas e lucrativas."
+      "descricao": "Espaço de convivência para compartilhar desafios, fazer networking e trocar experiências com quem vive a mesma fase de gestão."
     },
     {
-      "emoji": "❓",
+      "emoji": "?",
       "nome": "Dúvidas",
-      "descricao": "O lugar para perguntar sobre gestão e estratégia. Sua dúvida também pode ajudar outras pessoas da comunidade."
+      "descricao": "Lugar para perguntas sobre gestão e estratégia. Uma dúvida individual pode destravar o raciocínio de todo o grupo."
     },
     {
-      "emoji": "🚀",
+      "emoji": "%",
       "nome": "Resultados",
-      "descricao": "Espaço para celebrar conquistas e aprendizados ao colocar a estratégia em prática."
+      "descricao": "Espaço para registrar conquistas e aprendizados depois de colocar as decisões em prática."
     },
     {
-      "emoji": "📚",
+      "emoji": "#",
       "nome": "Materiais",
-      "descricao": "Planilhas, checklists, modelos, apresentações e gravações organizados para consulta. Somente a equipe publica aqui."
+      "descricao": "Planilhas, checklists, modelos, apresentações e gravações organizados para consulta."
     },
     {
-      "emoji": "💡",
+      "emoji": "*",
       "nome": "Sugestões",
-      "descricao": "Espaço para sugerir temas de aula e ideias de conteúdo. Ajuda a construir uma comunidade mais útil e alinhada às necessidades reais."
+      "descricao": "Canal para sugerir temas de aula e ideias de conteúdo alinhadas às necessidades reais da comunidade."
     }
   ],
   "depoimentos": "TODO_LISTA_DE_DEPOIMENTOS",
   "faq": [
-    { "pergunta": "Para quem é a Comunidade Elis Nhaia?", "resposta": "Para empresárias e empresários que já têm um negócio rodando e querem sair da operação do dia a dia para assumir a gestão estratégica, com processos e decisões mais sólidas." },
-    { "pergunta": "Como funcionam as lives?", "resposta": "São 2 encontros ao vivo por mês, com conteúdo estratégico e espaço para tirar dúvidas diretamente com a Elis." },
-    { "pergunta": "O que é o hotseat?", "resposta": "Uma vez por mês, um problema real de uma participante ou participante é resolvido ao vivo, na frente de todo o grupo — geralmente o momento mais citado como o mais valioso da comunidade." },
-    { "pergunta": "Preciso ter experiência prévia em gestão?", "resposta": "Não. O conteúdo é estruturado para quem já empreende, independente do nível de conhecimento formal em gestão." }
+    {
+      "pergunta": "Para quem é a Comunidade Elis Nhaia?",
+      "resposta": "Para empresárias e empresários que já têm um negócio rodando e querem sair da operação do dia a dia para assumir a gestão estratégica, com processos e decisões mais sólidas."
+    },
+    {
+      "pergunta": "Como funcionam as lives?",
+      "resposta": "São 2 encontros ao vivo por mês, com conteúdo estratégico e espaço para tirar dúvidas diretamente com a Elis."
+    },
+    {
+      "pergunta": "O que é o hotseat?",
+      "resposta": "Uma vez por mês, um problema real de uma participante ou participante é analisado ao vivo, com leitura de cenário, critérios de decisão e próximos passos."
+    },
+    {
+      "pergunta": "Preciso ter experiência prévia em gestão?",
+      "resposta": "Não. O conteúdo é estruturado para quem já empreende, independentemente do nível de conhecimento formal em gestão."
+    }
   ],
   "contato": {
     "whatsapp": "TODO_WHATSAPP",
@@ -72,6 +96,6 @@
   "seo": {
     "title": "Comunidade Elis Nhaia | Gestão Estratégica para Negócios Lucrativos",
     "description": "Aprenda a tomar decisões estratégicas, organizar processos e reduzir a dependência da sua presença constante no negócio.",
-    "ogImage": "assets/hero-elis-nhaia.jpg"
+    "ogImage": "assets/produto-comunidade-elis-nhaia.jpg"
   }
 }

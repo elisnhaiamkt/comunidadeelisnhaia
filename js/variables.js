@@ -6,7 +6,7 @@
  * este arquivo guarda apenas valores técnicos de comportamento/UI:
  * seletores, breakpoints, durações de animação e caminhos.
  *
- * Alterar aqui NÃO muda conteúdo comercial da página — apenas comportamento.
+ * Alterar aqui não muda conteúdo comercial da página, apenas comportamento.
  * -----------------------------------------------------------------------
  */
 
@@ -41,9 +41,9 @@ export const BREAKPOINTS = {
 };
 
 export const TIMING = {
-  scrollRevealThreshold: 0.15, // % do elemento visível para disparar animação
+  scrollRevealThreshold: 0.15,
   faqTransitionMs: 260,
-  headerScrollOffset: 40, // px de scroll para header ficar "compacto"
+  headerScrollOffset: 40,
 };
 
 export const CLASSNAMES = {

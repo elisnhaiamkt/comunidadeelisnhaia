@@ -7,7 +7,7 @@
  *  3. Liga interações (menu mobile, header ao rolar, acordeão de FAQ,
  *     revelação de seções ao entrar na viewport)
  *
- * Depende de variables.js para seletores/constantes técnicas — nenhum
+ * Depende de variables.js para seletores/constantes técnicas. Nenhum
  * valor de negócio (preço, textos, links) fica hardcoded aqui.
  * -----------------------------------------------------------------------
  */
@@ -22,7 +22,7 @@ async function loadConfig() {
   } catch (error) {
     console.error(
       "[Elis Nhaia] Não foi possível carregar config.json. " +
-      "Se você abriu o arquivo direto (file://), rode um servidor local — veja o README.",
+      "Se você abriu o arquivo direto (file://), rode um servidor local. Veja o README.",
       error
     );
     return null;
@@ -78,7 +78,7 @@ function bindFaqAccordion(list) {
       const answer = item.querySelector(".faq-item__answer");
       const isOpen = button.getAttribute("aria-expanded") === "true";
 
-      // Fecha os outros itens abertos (comportamento de acordeão único)
+      // Fecha os outros itens abertos (comportamento de acordeão único).
       list.querySelectorAll(".faq-item__question[aria-expanded='true']").forEach((openBtn) => {
         if (openBtn !== button) {
           openBtn.setAttribute("aria-expanded", "false");
