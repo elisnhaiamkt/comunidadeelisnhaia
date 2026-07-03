@@ -505,6 +505,13 @@ h1, h2, h3, p { margin: 0; }
   color: rgba(255, 255, 255, 0.86);
   font-size: 16px;
 }
+.testimonial-card__stars {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--color-terracotta);
+  font-size: 14px;
+  letter-spacing: 0.08em;
+}
 .testimonial-card span,
 .metric-card span {
   display: block;
@@ -518,6 +525,44 @@ h1, h2, h3, p { margin: 0; }
   font-size: 44px;
   line-height: 1;
   color: var(--color-terracotta);
+}
+.metric-card h3 {
+  max-width: 16ch;
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 1.35;
+  color: var(--color-white);
+}
+.metric-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+.metric-card__rating span {
+  margin-top: 0;
+  color: var(--color-terracotta);
+  font-size: 15px;
+  letter-spacing: 0.08em;
+}
+.metric-card p {
+  margin-top: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+}
+.metric-card a {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--color-terracotta);
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 800;
+}
+.social-proof__note {
+  max-width: 74ch;
+  margin-top: 20px;
+  color: rgba(255, 255, 255, 0.64);
+  font-size: 14px;
 }
 
 .compare-card h3 {
