@@ -11,14 +11,14 @@
       {
         "nome": "Plano Mensal",
         "preco": "R$ 67,00",
-        "detalhe": "Cobrança recorrente mensal.",
+        "detalhe": "Renovação mensal.",
         "linkCheckout": "https://pay.hotmart.com/E106597444O?off=zj9l4njt",
         "destaque": false
       },
       {
         "nome": "Plano Trimestral",
         "preco": "R$ 150,00",
-        "detalhe": "Parcelamento em até 3x no cartão.",
+        "detalhe": "Parcelamento em até 3x no cartão. Renovação trimestral.",
         "linkCheckout": "https://pay.hotmart.com/E106597444O?off=adluqrcq",
         "destaque": true,
         "badge": "Melhor custo-benefício"
@@ -62,6 +62,11 @@
       "beneficio": "Consulta",
       "titulo": "Biblioteca de materiais",
       "descricao": "Conteúdos, gravações e materiais organizados para acessar quando precisar."
+    },
+    {
+      "beneficio": "Organização",
+      "titulo": "Espaço estruturado",
+      "descricao": "Canais separados por função para encontrar avisos, dúvidas, materiais e resultados com facilidade."
     }
   ],
   "canais": [

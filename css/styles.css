@@ -129,6 +129,14 @@ h1, h2, h3, p { margin: 0; }
   border-color: var(--color-terracotta);
   color: var(--color-terracotta);
 }
+.btn--dark {
+  background: var(--color-petroleum);
+  color: var(--color-white);
+}
+.btn--dark:hover {
+  background: var(--color-navy);
+  transform: translateY(-1px);
+}
 .btn--small {
   min-height: 40px;
   padding: 10px 18px;
@@ -632,8 +640,72 @@ h1, h2, h3, p { margin: 0; }
   font-weight: 800;
 }
 
+.garantia {
+  background: var(--color-beige);
+  color: var(--color-ink);
+  border-top: 1px solid var(--color-line-light);
+  border-bottom: 1px solid var(--color-line-light);
+}
 .garantia__box {
-  background: rgba(23, 57, 74, 0.42);
+  color: var(--color-ink);
+  background: transparent;
+  border: 0;
+}
+.guarantee-seal {
+  display: grid;
+  place-items: center;
+  justify-self: start;
+  width: 154px;
+  height: 154px;
+  padding: 22px;
+  border: 3px solid var(--color-terracotta);
+  border-radius: 50%;
+  color: var(--color-petroleum);
+  text-align: center;
+}
+.guarantee-seal strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 52px;
+  line-height: 0.9;
+  color: var(--color-terracotta);
+}
+.guarantee-seal span {
+  display: block;
+  max-width: 100px;
+  font-size: 11px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+.garantia__content {
+  display: grid;
+  gap: 18px;
+}
+.garantia__content .section-title {
+  max-width: 15ch;
+  margin-bottom: 0;
+  color: var(--color-petroleum);
+}
+.garantia__content .section-lead {
+  color: rgba(16, 40, 56, 0.78);
+}
+.garantia__list {
+  display: grid;
+  gap: 10px;
+  margin: 2px 0 6px;
+}
+.garantia__list li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  color: rgba(16, 40, 56, 0.86);
+}
+.garantia__list li::before {
+  content: "✓";
+  color: var(--color-terracotta);
+  font-weight: 800;
+  flex: 0 0 auto;
 }
 .faq__list {
   margin-top: 34px;
@@ -850,6 +922,24 @@ h1, h2, h3, p { margin: 0; }
   .garantia__box {
     grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
     align-items: center;
+  }
+  .garantia__box {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 58px;
+    max-width: 960px;
+  }
+  .guarantee-seal {
+    justify-self: center;
+  }
+  .garantia__content {
+    max-width: 520px;
+  }
+  .garantia__content .cta-row {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .garantia__content .btn {
+    width: auto;
   }
   .entrega__grid,
   .canais__grid {

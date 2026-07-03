@@ -54,7 +54,7 @@ http://localhost:8000
 
 1. Hero com promessa, benefícios rápidos e CTA duplo.
 2. Problema com identificação objetiva da empresária.
-3. Solução com posicionamento da comunidade como direção contínua.
+3. Solução com posicionamento da comunidade como apoio estratégico.
 4. Entregas com cards curtos e escaneáveis.
 5. Hotseat como diferencial.
 6. Funcionamento organizado por canais.
