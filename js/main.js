@@ -34,8 +34,10 @@ function populateEntregaveis(config) {
   const template = document.querySelector(SELECTORS.entregavelTemplate);
   if (!list || !template || !config?.entregaveis) return;
 
+  list.innerHTML = "";
   config.entregaveis.forEach((item) => {
     const node = template.content.cloneNode(true);
+    node.querySelector(".card__kicker").textContent = item.beneficio || "";
     node.querySelector(".card__title").textContent = item.titulo;
     node.querySelector(".card__text").textContent = item.descricao;
     list.appendChild(node);
@@ -47,6 +49,7 @@ function populateCanais(config) {
   const template = document.querySelector(SELECTORS.canalTemplate);
   if (!list || !template || !config?.canais) return;
 
+  list.innerHTML = "";
   config.canais.forEach((canal) => {
     const node = template.content.cloneNode(true);
     node.querySelector(".canal-card__emoji").textContent = canal.emoji;
@@ -61,6 +64,7 @@ function populateFaq(config) {
   const template = document.querySelector(SELECTORS.faqItemTemplate);
   if (!list || !template || !config?.faq) return;
 
+  list.innerHTML = "";
   config.faq.forEach((item) => {
     const node = template.content.cloneNode(true);
     node.querySelector(".faq-item__question-text").textContent = item.pergunta;
@@ -92,19 +96,69 @@ function bindFaqAccordion(list) {
   });
 }
 
+function buildWhatsAppUrl(phone) {
+  if (!phone || phone.startsWith("TODO")) return "#";
+  const digits = phone.replace(/\D/g, "");
+  const message = encodeURIComponent("Olá, quero tirar uma dúvida sobre a Comunidade Elis Nhaia.");
+  return `https://wa.me/${digits}?text=${message}`;
+}
+
+function populatePlans(config) {
+  const list = document.querySelector(SELECTORS.plansList);
+  const template = document.querySelector(SELECTORS.planTemplate);
+  const plans = config?.oferta?.planos;
+  const included = config?.oferta?.incluso || [];
+  if (!list || !template || !plans?.length) return;
+
+  list.innerHTML = "";
+  plans.forEach((plan) => {
+    const node = template.content.cloneNode(true);
+    const card = node.querySelector(".plan-card");
+    const badge = node.querySelector(".plan-card__badge");
+    const includesList = node.querySelector(".plan-card__includes");
+
+    card.classList.toggle("plan-card--featured", Boolean(plan.destaque));
+    badge.textContent = plan.badge || "Acesso completo";
+    node.querySelector(".plan-card__name").textContent = plan.nome;
+    node.querySelector(".plan-card__price").textContent = plan.preco;
+    node.querySelector(".plan-card__detail").textContent = plan.detalhe;
+    const cta = node.querySelector(SELECTORS.ctaButtons);
+    if (plan.linkCheckout) cta.setAttribute("href", plan.linkCheckout);
+
+    included.forEach((item) => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      includesList.appendChild(li);
+    });
+
+    list.appendChild(node);
+  });
+}
+
 function populateOferta(config) {
   if (!config?.oferta) return;
-  const { preco, precoParcelado, linkCheckout, textoBotaoPrincipal, garantia, vagas } = config.oferta;
+  const { textoBotaoPrincipal, garantia, vagas } = config.oferta;
+  const whatsappUrl = buildWhatsAppUrl(config?.contato?.whatsapp);
 
   document.querySelectorAll(SELECTORS.ctaPrice).forEach((el) => {
-    el.textContent = preco;
+    el.textContent = config.oferta.planos?.[0]?.preco || "";
   });
   document.querySelectorAll(SELECTORS.ctaPriceParcelado).forEach((el) => {
-    el.textContent = precoParcelado || "";
+    el.textContent = config.oferta.planos?.[0]?.detalhe || "";
   });
   document.querySelectorAll(SELECTORS.ctaButtons).forEach((el) => {
-    if (linkCheckout) el.setAttribute("href", linkCheckout);
+    const hasPlanCheckout = el.closest(".plan-card") && el.getAttribute("href") !== "#";
+    if (!hasPlanCheckout) {
+      el.setAttribute("href", "#planos");
+    }
     if (textoBotaoPrincipal) el.textContent = textoBotaoPrincipal;
+  });
+  document.querySelectorAll(SELECTORS.whatsappButtons).forEach((el) => {
+    el.setAttribute("href", whatsappUrl);
+    if (whatsappUrl !== "#") {
+      el.setAttribute("target", "_blank");
+      el.setAttribute("rel", "noopener");
+    }
   });
 
   const guaranteeEl = document.querySelector(SELECTORS.guaranteeText);
@@ -117,6 +171,25 @@ function populateOferta(config) {
     urgencyEl.textContent = vagas.textoUrgencia;
     urgencyEl.hidden = false;
   }
+}
+
+function bindStickyCtaVisibility() {
+  const sticky = document.querySelector(SELECTORS.mobileSticky);
+  const hero = document.querySelector(".hero");
+  if (!sticky || !hero) return;
+  if (!("IntersectionObserver" in window)) {
+    sticky.classList.add(CLASSNAMES.isVisible);
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      sticky.classList.toggle(CLASSNAMES.isVisible, !entry.isIntersecting);
+    },
+    { threshold: 0.2 }
+  );
+
+  observer.observe(hero);
 }
 
 function bindMobileNav() {
@@ -181,6 +254,7 @@ async function init() {
   bindMobileNav();
   bindHeaderScrollState();
   bindScrollReveal();
+  bindStickyCtaVisibility();
   stampYear();
 
   const config = await loadConfig();
@@ -189,6 +263,7 @@ async function init() {
   populateEntregaveis(config);
   populateCanais(config);
   populateFaq(config);
+  populatePlans(config);
   populateOferta(config);
 }
 

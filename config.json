@@ -5,91 +5,122 @@
     "descricaoCurta": "Ambiente para empresárias e empresários que querem tomar decisões estratégicas, organizar processos e reduzir a dependência da própria presença no negócio."
   },
   "oferta": {
-    "preco": "TODO_PRECO",
-    "precoParcelado": "TODO_PRECO_PARCELADO",
-    "moeda": "BRL",
-    "linkCheckout": "TODO_LINK_CHECKOUT",
+    "linkCheckout": "https://pay.hotmart.com/E106597444O?off=adluqrcq",
     "textoBotaoPrincipal": "Quero entrar na comunidade",
+    "planos": [
+      {
+        "nome": "Plano Mensal",
+        "preco": "R$ 67,00",
+        "detalhe": "Cobrança recorrente mensal.",
+        "linkCheckout": "https://pay.hotmart.com/E106597444O?off=zj9l4njt",
+        "destaque": false
+      },
+      {
+        "nome": "Plano Trimestral",
+        "preco": "R$ 150,00",
+        "detalhe": "Parcelamento em até 3x no cartão.",
+        "linkCheckout": "https://pay.hotmart.com/E106597444O?off=adluqrcq",
+        "destaque": true,
+        "badge": "Melhor custo-benefício"
+      }
+    ],
+    "incluso": [
+      "1 live estratégica por mês",
+      "1 hotseat por mês",
+      "Ferramentas práticas",
+      "Networking entre empresárias",
+      "Biblioteca de materiais",
+      "Conteúdos exclusivos"
+    ],
     "garantia": {
-      "dias": "TODO_DIAS_GARANTIA",
-      "texto": "TODO_TEXTO_GARANTIA"
-    },
-    "vagas": {
-      "limitadas": false,
-      "textoUrgencia": "TODO_TEXTO_URGENCIA_OU_null"
+      "dias": "7",
+      "texto": "Você tem 7 dias para conhecer a comunidade e avaliar se ela faz sentido para o seu momento."
     }
   },
   "entregaveis": [
     {
-      "titulo": "2 lives mensais",
-      "descricao": "Encontros ao vivo com conteúdo estratégico e espaço para tirar dúvidas diretamente com a Elis."
+      "beneficio": "Direção",
+      "titulo": "1 live estratégica por mês",
+      "descricao": "Encontros ao vivo para trabalhar temas de gestão com clareza, método e aplicação prática."
     },
     {
+      "beneficio": "Decisão",
+      "titulo": "1 hotseat por mês",
+      "descricao": "Análise de um caso real para mostrar critérios, leitura de cenário e próximos passos."
+    },
+    {
+      "beneficio": "Aplicação",
       "titulo": "Ferramentas práticas",
-      "descricao": "Planilhas, checklists e modelos para aplicar na gestão sem começar do zero."
+      "descricao": "Planilhas, checklists e modelos para organizar a gestão sem começar do zero."
     },
     {
-      "titulo": "1 hotseat mensal",
-      "descricao": "Um problema real analisado ao vivo, com critérios de decisão e próximos passos concretos."
+      "beneficio": "Troca",
+      "titulo": "Networking",
+      "descricao": "Contato com empresárias e empresários que vivem desafios parecidos de crescimento e gestão."
     },
     {
-      "titulo": "Comunidade ativa",
-      "descricao": "Troca entre empresários que estão construindo empresas mais organizadas, lucrativas e menos dependentes da operação."
+      "beneficio": "Consulta",
+      "titulo": "Biblioteca de materiais",
+      "descricao": "Conteúdos, gravações e materiais organizados para acessar quando precisar."
     }
   ],
   "canais": [
     {
-      "emoji": "!",
+      "emoji": "01",
       "nome": "Avisos",
-      "descricao": "Canal oficial de comunicados: agenda dos encontros, novidades, abertura de inscrições e novos materiais."
+      "descricao": "Agenda dos encontros, novidades, abertura de inscrições e novos materiais."
     },
     {
-      "emoji": "+",
+      "emoji": "02",
       "nome": "Comunidade",
-      "descricao": "Espaço de convivência para compartilhar desafios, fazer networking e trocar experiências com quem vive a mesma fase de gestão."
+      "descricao": "Espaço de convivência para compartilhar desafios, networking e experiências."
     },
     {
-      "emoji": "?",
+      "emoji": "03",
       "nome": "Dúvidas",
-      "descricao": "Lugar para perguntas sobre gestão e estratégia. Uma dúvida individual pode destravar o raciocínio de todo o grupo."
+      "descricao": "Perguntas sobre gestão e estratégia para destravar decisões do dia a dia."
     },
     {
-      "emoji": "%",
+      "emoji": "04",
       "nome": "Resultados",
-      "descricao": "Espaço para registrar conquistas e aprendizados depois de colocar as decisões em prática."
+      "descricao": "Registro de conquistas, aprendizados e avanços depois da aplicação."
     },
     {
-      "emoji": "#",
+      "emoji": "05",
       "nome": "Materiais",
-      "descricao": "Planilhas, checklists, modelos, apresentações e gravações organizados para consulta."
+      "descricao": "Planilhas, checklists, modelos, apresentações e gravações organizadas."
     },
     {
-      "emoji": "*",
+      "emoji": "06",
       "nome": "Sugestões",
-      "descricao": "Canal para sugerir temas de aula e ideias de conteúdo alinhadas às necessidades reais da comunidade."
+      "descricao": "Canal para sugerir temas alinhados às necessidades reais da comunidade."
     }
   ],
-  "depoimentos": "TODO_LISTA_DE_DEPOIMENTOS",
+  "depoimentos": [],
   "faq": [
     {
       "pergunta": "Para quem é a Comunidade Elis Nhaia?",
-      "resposta": "Para empresárias e empresários que já têm um negócio rodando e querem sair da operação do dia a dia para assumir a gestão estratégica, com processos e decisões mais sólidas."
+      "resposta": "Para empresárias e empresários que já têm um negócio rodando e querem sair da operação do dia a dia para assumir uma gestão mais estratégica, com processos e decisões mais sólidas."
     },
     {
-      "pergunta": "Como funcionam as lives?",
-      "resposta": "São 2 encontros ao vivo por mês, com conteúdo estratégico e espaço para tirar dúvidas diretamente com a Elis."
+      "pergunta": "Quantas lives acontecem por mês?",
+      "resposta": "A comunidade inclui 1 live estratégica por mês, além de 1 hotseat mensal com análise de um caso real."
     },
     {
       "pergunta": "O que é o hotseat?",
-      "resposta": "Uma vez por mês, um problema real de uma participante ou participante é analisado ao vivo, com leitura de cenário, critérios de decisão e próximos passos."
+      "resposta": "É um encontro em que um negócio real é analisado ao vivo. A participante recebe direcionamento e todo o grupo aprende com a leitura do caso."
     },
     {
-      "pergunta": "Preciso ter experiência prévia em gestão?",
-      "resposta": "Não. O conteúdo é estruturado para quem já empreende, independentemente do nível de conhecimento formal em gestão."
+      "pergunta": "Os planos mensal e trimestral têm acessos diferentes?",
+      "resposta": "Não. Os dois planos incluem a experiência completa. O plano trimestral foi destacado apenas pelo melhor custo-benefício."
+    },
+    {
+      "pergunta": "Posso falar com a equipe antes de entrar?",
+      "resposta": "Sim. O botão 'Falar com a equipe' leva ao WhatsApp para tirar dúvidas antes da compra."
     }
   ],
   "contato": {
-    "whatsapp": "TODO_WHATSAPP",
+    "whatsapp": "5547984657656",
     "instagram": "TODO_INSTAGRAM",
     "email": "TODO_EMAIL"
   },

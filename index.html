@@ -23,11 +23,12 @@
       <nav class="nav" data-nav>
         <a href="#comunidade" data-nav-link>A comunidade</a>
         <a href="#entrega" data-nav-link>Entregas</a>
-        <a href="#canais" data-nav-link>Como funciona</a>
+        <a href="#como-funciona" data-nav-link>Como funciona</a>
+        <a href="#planos" data-nav-link>Planos</a>
         <a href="#faq" data-nav-link>Dúvidas</a>
       </nav>
 
-      <a href="#oferta" class="btn btn--small btn--accent" data-cta-button>Quero entrar</a>
+      <a href="#planos" class="btn btn--small btn--accent" data-cta-button>Quero entrar</a>
 
       <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -46,12 +47,21 @@
         <p class="eyebrow"><span class="eyebrow__bar"></span>Gestão estratégica online</p>
         <h1 class="hero__title">Decida com clareza. Cresça sem depender só de você.</h1>
         <p class="hero__subtitle">
-          Aprenda a tomar decisões estratégicas, organizar processos e reduzir a dependência da sua presença
-          constante no negócio, com direção prática para uma gestão mais lucrativa e sustentável.
+          Uma comunidade para empresárias e empresários que querem organizar processos, tomar decisões melhores
+          e reduzir a dependência da própria presença no negócio.
         </p>
-        <div class="hero__actions">
-          <a href="#oferta" class="btn btn--accent" data-cta-button>Quero entrar na comunidade</a>
-          <a href="#comunidade" class="btn btn--ghost">Entender a proposta</a>
+
+        <ul class="hero__benefits" aria-label="Benefícios da comunidade">
+          <li>Live estratégica mensal</li>
+          <li>Hotseat mensal</li>
+          <li>Ferramentas práticas</li>
+          <li>Networking entre empresárias</li>
+          <li>Conteúdos exclusivos</li>
+        </ul>
+
+        <div class="hero__actions cta-row">
+          <a href="#planos" class="btn btn--accent" data-cta-button>Quero entrar na comunidade</a>
+          <a href="#" class="btn btn--ghost" data-whatsapp-button>Falar com a equipe</a>
         </div>
       </div>
     </section>
@@ -59,62 +69,75 @@
     <section class="problema container" id="comunidade" data-reveal>
       <div class="section-copy">
         <p class="eyebrow"><span class="eyebrow__bar"></span>O ponto de partida</p>
-        <h2 class="section-title">Não falta esforço. Falta processo para o negócio andar sem você em tudo.</h2>
+        <h2 class="section-title">Quando tudo precisa passar por você, a empresa encontra um limite.</h2>
         <p class="section-lead">
-          Quando toda decisão passa por você, a empresa cresce até o limite da sua presença. A comunidade existe
-          para organizar prioridades, criar critérios de gestão e transformar processos em rotina de decisão.
+          O problema não é falta de esforço. É falta de método para decidir, delegar e organizar a rotina de gestão.
         </p>
       </div>
-      <aside class="proof-strip" aria-label="Experiência da Elis Nhaia">
-        <div><strong>26</strong><span>anos de mercado</span></div>
-        <div><strong>100+</strong><span>empresas atendidas</span></div>
-        <div><strong>11</strong><span>anos de consultoria</span></div>
-      </aside>
+
+      <div class="problem-list">
+        <p>Quando cada decisão precisa da sua aprovação.</p>
+        <p>Quando sua equipe executa, mas ainda depende do seu direcionamento.</p>
+        <p>Quando o negócio cresce e você continua sendo o gargalo.</p>
+      </div>
+    </section>
+
+    <section class="solucao container" data-reveal>
+      <div class="solucao__panel">
+        <div class="section-copy">
+          <p class="eyebrow"><span class="eyebrow__bar"></span>A solução</p>
+          <h2 class="section-title">Continuidade para pensar a empresa com mais estratégia.</h2>
+        </div>
+        <div class="solucao__copy">
+          <p>
+            A Comunidade Elis Nhaia não é apenas um espaço de conteúdo. É um ambiente de direção contínua,
+            com encontros, ferramentas e discussões que ajudam você a transformar decisões soltas em gestão.
+          </p>
+          <div class="cta-row">
+            <a href="#planos" class="btn btn--accent" data-cta-button>Quero entrar na comunidade</a>
+            <a href="#" class="btn btn--ghost" data-whatsapp-button>Falar com a equipe</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="entrega container" id="entrega" data-reveal>
       <p class="eyebrow"><span class="eyebrow__bar"></span>O que você recebe</p>
-      <h2 class="section-title">Conteúdo aplicado para decidir, delegar e organizar melhor.</h2>
+      <h2 class="section-title">Recursos para decidir, delegar e organizar melhor.</h2>
 
       <div class="entrega__grid" data-entregaveis-list></div>
 
       <template data-entregavel-template>
         <article class="card">
+          <span class="card__kicker"></span>
           <h3 class="card__title"></h3>
           <p class="card__text"></p>
         </article>
       </template>
     </section>
 
-    <section class="assinatura container" data-reveal>
-      <div class="assinatura__image">
-        <img src="assets/produto-comunidade-elis-nhaia.jpg" alt="Identidade visual da Comunidade Elis Nhaia" />
-      </div>
-      <div class="assinatura__content">
-        <p class="eyebrow"><span class="eyebrow__bar"></span>Produto novo, marca consistente</p>
-        <h2 class="section-title">A estética é mais editorial. A autoridade continua Elis Nhaia.</h2>
-        <p class="section-lead">
-          A foto em preto e branco dá personalidade própria à comunidade. A base visual permanece no sistema da marca:
-          azul escuro, petróleo, terracota nos pontos de ação, tipografia limpa e comunicação direta.
-        </p>
-      </div>
-    </section>
-
     <section class="hotseat container" data-reveal>
       <div class="hotseat__bar" aria-hidden="true"></div>
       <div class="hotseat__content">
-        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>Momento central</p>
-        <h2 class="hotseat__title">Hotseat mensal.</h2>
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>Diferencial</p>
+        <h2 class="hotseat__title">Hotseat mensal: aprendizado a partir de casos reais.</h2>
         <p class="hotseat__text">
-          Um problema real é colocado em pauta e trabalhado ao vivo. A proposta não é inspirar por alguns minutos,
-          mas mostrar critério de decisão, leitura de cenário e caminho concreto.
+          Um negócio é analisado ao vivo com leitura de cenário, critérios de decisão e próximos passos.
+          Quem assiste também aprende a enxergar padrões, evitar atalhos ruins e decidir com mais método.
         </p>
       </div>
     </section>
 
-    <section class="canais container" id="canais" data-reveal>
-      <p class="eyebrow"><span class="eyebrow__bar"></span>Como funciona por dentro</p>
-      <h2 class="section-title">Seis espaços com função clara.</h2>
+    <section class="canais container" id="como-funciona" data-reveal>
+      <div class="section-row">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__bar"></span>Como funciona por dentro</p>
+          <h2 class="section-title">Cada espaço tem uma função clara.</h2>
+        </div>
+        <p class="section-lead">
+          A experiência foi pensada para evitar ruído: avisos, dúvidas, materiais, resultados e sugestões ficam organizados por contexto.
+        </p>
+      </div>
 
       <div class="canais__grid" data-canais-list></div>
 
@@ -127,21 +150,106 @@
       </template>
     </section>
 
-    <section class="oferta" id="oferta" data-reveal>
-      <div class="container oferta__inner">
-        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>Faça parte</p>
-        <h2 class="oferta__title">Comunidade Elis Nhaia</h2>
-        <p class="oferta__subtitle">Gestão Estratégica para Negócios Lucrativos</p>
+    <section class="autoridade container" data-reveal>
+      <div class="autoridade__image">
+        <img src="assets/produto-comunidade-elis-nhaia.jpg" alt="Identidade visual da Comunidade Elis Nhaia" />
+      </div>
+      <div class="autoridade__content">
+        <p class="eyebrow"><span class="eyebrow__bar"></span>Sobre a Elis</p>
+        <h2 class="section-title">Visão estratégica aplicada à realidade da empresa.</h2>
+        <p class="section-lead">
+          A experiência da Elis combina leitura de negócio, organização de processos e desenvolvimento de lideranças para empresas que precisam crescer com mais estrutura.
+        </p>
+        <aside class="proof-strip" aria-label="Experiência da Elis Nhaia">
+          <div><strong>26</strong><span>anos de mercado</span></div>
+          <div><strong>100+</strong><span>empresas atendidas</span></div>
+          <div><strong>11</strong><span>anos de consultoria</span></div>
+        </aside>
+      </div>
+    </section>
 
-        <div class="oferta__price">
-          <span class="oferta__price-value" data-cta-price>—</span>
-          <span class="oferta__price-detail" data-cta-price-parcelado></span>
+    <section class="social-proof container" data-reveal>
+      <div class="section-row">
+        <div>
+          <p class="eyebrow"><span class="eyebrow__bar"></span>Prova social</p>
+          <h2 class="section-title">Credibilidade para decidir com segurança.</h2>
         </div>
+        <p class="section-lead">
+          Espaço preparado para depoimentos, comentários, prints e resultados de participantes.
+        </p>
+      </div>
 
-        <a href="#" class="btn btn--accent btn--large" data-cta-button>Quero entrar na comunidade</a>
+      <div class="social-proof__grid">
+        <article class="testimonial-card">
+          <p>“A clareza dos encontros ajuda a transformar decisões difíceis em próximos passos possíveis.”</p>
+          <span>Depoimento de participante</span>
+        </article>
+        <article class="testimonial-card">
+          <p>“O hotseat mostra caminhos que eu não enxergaria sozinha, mesmo quando o caso analisado não é meu.”</p>
+          <span>Comentário da comunidade</span>
+        </article>
+        <article class="metric-card">
+          <strong>100+</strong>
+          <span>empresas já atendidas pela Elis em projetos de consultoria e gestão.</span>
+        </article>
+      </div>
+    </section>
 
-        <p class="oferta__guarantee" data-guarantee-text></p>
-        <p class="oferta__urgency" data-urgency-banner hidden></p>
+    <section class="comparativo container" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__bar"></span>Comparativo</p>
+      <h2 class="section-title">O que muda quando você tem direção contínua.</h2>
+
+      <div class="comparativo__grid">
+        <article class="compare-card compare-card--muted">
+          <h3>Sem a comunidade</h3>
+          <ul>
+            <li>Decide sozinha.</li>
+            <li>Procura soluções do zero.</li>
+            <li>Aprende apenas com os próprios erros.</li>
+            <li>Não tem um espaço para discutir decisões.</li>
+          </ul>
+        </article>
+        <article class="compare-card compare-card--accent">
+          <h3>Com a comunidade</h3>
+          <ul>
+            <li>Aprende com outros negócios.</li>
+            <li>Tem acesso à experiência da Elis.</li>
+            <li>Recebe ferramentas prontas.</li>
+            <li>Evolui continuamente com método.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="oferta" id="planos" data-reveal>
+      <div class="container oferta__inner">
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>Planos</p>
+        <h2 class="oferta__title">Escolha como entrar na Comunidade Elis Nhaia</h2>
+        <p class="oferta__subtitle">Os dois planos dão acesso à mesma experiência completa.</p>
+
+        <div class="plans-grid" data-plans-list></div>
+
+        <template data-plan-template>
+          <article class="plan-card">
+            <span class="plan-card__badge"></span>
+            <h3 class="plan-card__name"></h3>
+            <p class="plan-card__price"></p>
+            <p class="plan-card__detail"></p>
+            <ul class="plan-card__includes"></ul>
+            <a href="#" class="btn btn--accent btn--large" data-cta-button>Quero entrar na comunidade</a>
+            <a href="#" class="plan-card__support" data-whatsapp-button>Falar com a equipe</a>
+          </article>
+        </template>
+      </div>
+    </section>
+
+    <section class="garantia container" data-reveal>
+      <div class="garantia__box">
+        <p class="eyebrow"><span class="eyebrow__bar"></span>Garantia</p>
+        <h2 class="section-title">Entre, conheça a experiência e decida com tranquilidade.</h2>
+        <p class="section-lead" data-guarantee-text>
+          Você terá 7 dias para avaliar se a comunidade faz sentido para o seu momento.
+        </p>
       </div>
     </section>
 
@@ -163,6 +271,18 @@
         </div>
       </template>
     </section>
+
+    <section class="final-cta" data-reveal>
+      <div class="container final-cta__inner">
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>Próximo passo</p>
+        <h2>Organize a gestão para a empresa crescer com mais critério.</h2>
+        <p>Entre na comunidade e acompanhe um processo contínuo de decisão, método e troca entre negócios.</p>
+        <div class="cta-row cta-row--center">
+          <a href="#planos" class="btn btn--accent btn--large" data-cta-button>Quero entrar na comunidade</a>
+          <a href="#" class="btn btn--ghost btn--large" data-whatsapp-button>Falar com a equipe</a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -171,6 +291,10 @@
       <p class="footer__copy">© <span data-year></span> Comunidade Elis Nhaia. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <div class="mobile-sticky-cta" data-mobile-sticky>
+    <a href="#planos" class="btn btn--accent" data-cta-button>Quero entrar na comunidade</a>
+  </div>
 
   <script type="module" src="js/main.js"></script>
 </body>
