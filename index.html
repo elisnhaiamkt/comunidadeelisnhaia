@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Comunidade Elis Nhaia | Gestão Estratégica para Negócios Lucrativos</title>
+  <meta name="description" content="Aprenda a tomar decisões estratégicas, organizar processos e reduzir a dependência da sua presença constante no negócio." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" data-header>
+    <div class="header__inner container">
+      <a href="#topo" class="header__brand">ELIS <span>NHAIA</span></a>
+
+      <nav class="nav" data-nav>
+        <a href="#comunidade" data-nav-link>A comunidade</a>
+        <a href="#entrega" data-nav-link>O que você recebe</a>
+        <a href="#canais" data-nav-link>Como funciona</a>
+        <a href="#faq" data-nav-link>Dúvidas</a>
+      </nav>
+
+      <a href="#oferta" class="btn btn--small btn--accent" data-cta-button>Quero entrar</a>
+
+      <button class="nav-toggle" data-nav-toggle aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="assets/hero-elis-nhaia.jpg" alt="Elis Nhaia, especialista em gestão estratégica de negócios" />
+        <div class="hero__media-fade"></div>
+      </div>
+
+      <div class="container hero__content">
+        <p class="eyebrow"><span class="eyebrow__bar"></span>Comunidade</p>
+        <h1 class="hero__title">Sua empresa não deveria<br>depender de você o tempo todo.</h1>
+        <p class="hero__subtitle">
+          A Comunidade Elis Nhaia é o ambiente para empresárias e empresários que querem trocar a operação
+          por gestão estratégica — decisões mais sólidas, processos organizados e um negócio mais lucrativo
+          e sustentável.
+        </p>
+        <div class="hero__actions">
+          <a href="#oferta" class="btn btn--accent" data-cta-button>Quero entrar na comunidade</a>
+          <a href="#comunidade" class="btn btn--ghost">Entender como funciona</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== DOR / CONTEXTO ===================== -->
+    <section class="problema container" id="comunidade" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__bar"></span>O ponto de partida</p>
+      <h2 class="section-title">
+        Você resolve tudo. E é exatamente isso<br>que está travando o crescimento.
+      </h2>
+      <p class="section-lead">
+        Toda decisão passa por você. Todo processo depende da sua presença. O negócio cresce até o limite
+        da sua própria capacidade — e depois disso, trava. A Comunidade Elis Nhaia existe para construir
+        a estrutura que falta: gestão, estratégia e processos que funcionam mesmo quando você não está olhando.
+      </p>
+    </section>
+
+    <!-- ===================== O QUE VOCÊ RECEBE ===================== -->
+    <section class="entrega container" id="entrega" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__bar"></span>O que você recebe</p>
+      <h2 class="section-title">Conteúdo aplicado, não teoria solta.</h2>
+
+      <div class="entrega__grid" data-entregaveis-list>
+        <!-- Itens injetados via JS a partir de config.json -->
+      </div>
+
+      <template data-entregavel-template>
+        <article class="card">
+          <h3 class="card__title"></h3>
+          <p class="card__text"></p>
+        </article>
+      </template>
+    </section>
+
+    <!-- ===================== HOTSEAT DESTAQUE (elemento assinatura) ===================== -->
+    <section class="hotseat container" data-reveal>
+      <div class="hotseat__bar" aria-hidden="true"></div>
+      <div class="hotseat__content">
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>O momento mais citado da comunidade</p>
+        <h2 class="hotseat__title">O hotseat mensal.</h2>
+        <p class="hotseat__text">
+          Uma vez por mês, um problema real — seu ou de outra participante — é colocado em pauta e resolvido
+          ao vivo, na frente de todo o grupo. Não é aula. É gestão estratégica acontecendo em tempo real,
+          com todo mundo aprendendo junto.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== CANAIS / COMO FUNCIONA ===================== -->
+    <section class="canais container" id="canais" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__bar"></span>Como funciona por dentro</p>
+      <h2 class="section-title">Seis espaços, cada um com uma função clara.</h2>
+
+      <div class="canais__grid" data-canais-list>
+        <!-- Itens injetados via JS a partir de config.json -->
+      </div>
+
+      <template data-canal-template>
+        <article class="canal-card">
+          <span class="canal-card__emoji" aria-hidden="true"></span>
+          <h3 class="canal-card__title"></h3>
+          <p class="canal-card__text"></p>
+        </article>
+      </template>
+    </section>
+
+    <!-- ===================== OFERTA / CTA FINAL ===================== -->
+    <section class="oferta" id="oferta" data-reveal>
+      <div class="container oferta__inner">
+        <p class="eyebrow eyebrow--on-dark"><span class="eyebrow__bar"></span>Faça parte</p>
+        <h2 class="oferta__title">Comunidade Elis Nhaia</h2>
+        <p class="oferta__subtitle">Gestão Estratégica para Negócios Lucrativos</p>
+
+        <div class="oferta__price">
+          <span class="oferta__price-value" data-cta-price>—</span>
+          <span class="oferta__price-detail" data-cta-price-parcelado></span>
+        </div>
+
+        <a href="#" class="btn btn--accent btn--large" data-cta-button>Quero entrar na comunidade</a>
+
+        <p class="oferta__guarantee" data-guarantee-text></p>
+        <p class="oferta__urgency" data-urgency-banner hidden></p>
+      </div>
+    </section>
+
+    <!-- ===================== FAQ ===================== -->
+    <section class="faq container" id="faq" data-reveal>
+      <p class="eyebrow"><span class="eyebrow__bar"></span>Dúvidas</p>
+      <h2 class="section-title">Perguntas frequentes</h2>
+
+      <div class="faq__list" data-faq-list>
+        <!-- Itens injetados via JS a partir de config.json -->
+      </div>
+
+      <template data-faq-item-template>
+        <div class="faq-item">
+          <button class="faq-item__question" type="button" aria-expanded="false">
+            <span class="faq-item__question-text"></span>
+            <span class="faq-item__icon" aria-hidden="true">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p></p>
+          </div>
+        </div>
+      </template>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">ELIS <span>NHAIA</span></p>
+      <p class="footer__copy">© <span data-year></span> Comunidade Elis Nhaia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
